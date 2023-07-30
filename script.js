@@ -15,18 +15,15 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 }
  
-//light / dark mode section
-
-const modeBtn = document
-.querySelector("#light-dark-mode-container")
-.addEventListener("click", function() {
-  const everything = document.querySelectorAll('*')
-  const projectTiles = document.querySelectorAll('.project-tile-overlay');
-  everything.forEach((item) => {
-   item.classList.toggle('dark');
- });
-
-projectTiles.forEach(item)=> {
-item.classList.remove('darkk');
-  })
-});
+// Dark Mode
+let darkmode = document.querySelector('#darkmode');
+ 
+darkmode.onclick = () => {
+    if(darkmode.classList.contains('bx-moon')){
+        darkmode.classList.replace('bx-moon','bx-sun');
+        document.body.classList.add('active');
+    }else{
+        darkmode.classList.replace('bx-sun','bx-moon');
+        document.body.classList.remove('active');
+    }
+}

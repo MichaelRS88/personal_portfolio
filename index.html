@@ -1,208 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <!-- CSS Link -->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="styles.css">
-    <!-- Box Icons -->
-    <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
- 
-</head>
-<body>
-    <!-- Navbar -->
+    <title>Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
     <header>
-        <a href="#" class="logo">Portfolio</a>
- 
-        <div class="bx bx-menu" id="menu-icon"></div>
- 
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#services">Portfolio</a></li>
-            <li><a href="#portfolio">CV</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <div class="bx bx-moon" id="darkmode"></div>
-        </ul>
+      <a href="#" class="logo">Portfolio</a>
+      <div class="menuToggle"></div>
+      <ul class="nav">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </header>
-    <!-- Home -->
- 
-    <section class="home" id="home">
-        <div class="social">
-            <a href="#"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-linkedin' ></i></a>
-            <a href="#"><i class='bx bxl-codepen' ></i></a>
+    <section id="home">
+        <div class="content">
+            <h2>Michael Rubriche</h2>
+             <p>LoremIpsum blablablabla stuff stuff stufff hfjshjs
+                jbjdsjajbj.</p>
+                <a href="#" class="btn">Contact Me</a>
         </div>
-        <div class="home-img">
-            <img src="img/profile.png" alt="">
-        </div>
-        <div class="home-text">
-            <span>Hi, I'm</span>
-            <h1>Michael Rubriche</h1>
-            <h2>Front-End Developer</h2>
-            <p><b>Front-End Developer | HTML5 | CSS | JavaScript | React | jQuery | Bootstrap | Git |</b></p>
-              
-            <a href="#contact" class="btn">Contact Me</a>
-        </div>
- 
-        <div class="scroll-down">
-            <a href="#about">
-                <i class='bx bx-mouse' ></i>
-                <span>Scroll Down</span>
-                <i class='bx bxs-down-arrow-alt' ></i>
-            </a>
-        </div>
+        <img src="michael.png" class="michael">
     </section>
-    <!-- About -->
-    <section class="about" id="about">
-        <div class="heading">
-            <h2>About</h2>
-            <span>Introduction</span>
-        </div>
-        <!-- About Content -->
-        <div class="about-container">
-            <div class="about-img">
-                <img src="img/about.jpg" alt="">
-            </div>
-            <div class="about-text">
-                <p>Hi, I'm Michael, and I finished my studies with freeCodeCamp and The Odin Project for the Development path. My interests are in Front End field and I love to create beautiful and performant products with delightful user experiences and top accessibility.
-
-Before this, I can count with a 7-year career on the Customer Service industry where I got soft communication skills and creativity by solving daily issues in a variety of CRM tools, which make me fall in love with the Development world.</p>
-              
-              
-                <div class="information">
-                    <!-- Box 1 -->
-                    <div class="info-box">
-                        <i class='bx bxs-user' ></i>
-                        <span>Michael Rubriche</span>
-                    </div>
-                    <!-- Box 2 -->
-                    <div class="info-box">
-                        <i class='bx bxs-phone' ></i>
-                        <span>+57 319 630 8160</span>
-                    </div>
-                    <!-- Box 3 -->
-                    <div class="info-box">
-                        <i class='bx bxs-envelope' ></i>
-                        <span>michael.rubriche88@gmail.com</span>
-                    </div>
-                </div>
-                <a href="#" class="btn">Download My Cv</a>
-            </div>
-        </div>
-    </section>
-    <!-- Skills Space -->
-    <section class="skills" id="skills">
-        <div class="heading">
-            <h2>Skills</h2>
-            <span>My Skills</span>
-        </div>
-        <!-- Skills Content Hub-->
-        <div class="skills-container">
-            <div class="bars">
-                <!-- Box 1 -->
-                <div class="bars-box">
-                    <h3>HTML</h3>
-                    <span>94%</span>
-                    <div class="light-bar"></div>
-                    <div class="percent-bar html-bar"></div>
-                </div>
-                <!-- Box 2 -->
-                <div class="bars-box">
-                    <h3>CSS</h3>
-                    <span>90%</span>
-                    <div class="light-bar"></div>
-                    <div class="percent-bar css-bar"></div>
-                </div>
-                <!-- Box 3 -->
-                <div class="bars-box">
-                    <h3>JavaScript</h3>
-                    <span>84%</span>
-                    <div class="light-bar"></div>
-                    <div class="percent-bar js-bar"></div>
-                </div>
-                <!-- Box 4 -->
-                <div class="bars-box">
-                    <h3>React</h3>
-                    <span>80%</span>
-                    <div class="light-bar"></div>
-                    <div class="percent-bar react-bar"></div>
-                </div>
-            </div>
-            <div class="skills-img">
-                <img src="img/skills.png" alt="">
-            </div>
-        </div>
- 
-    </section>
-    <!-- Services Hub -->
-    <section class="services" id="services">
-        <div class="heading">
-            <h2>Portfolio</h2>
-            <span>My Projects</span>
-        </div>
-    
-    <section class="portfolio" id="portfolio">
-        
-        <div class="portfolio-content">
-            <div class="portfolio-img">
-                <img src="img/p1.jpg" alt="">
-            </div>
-            <div class="portfolio-img">
-                <img src="img/p2.jpg" alt="">
-            </div>
-            <div class="portfolio-img">
-                <img src="img/p3.jpg" alt="">
-            </div>
-            <div class="portfolio-img">
-                <img src="img/p4.jpg" alt="">
-            </div>
-            <div class="portfolio-img">
-                <img src="img/p5.jpg" alt="">
-            </div>
-            <div class="portfolio-img">
-                <img src="img/p6.jpg" alt="">
-            </div>
-            
-        </div>
-    </section>
-    <!-- Contact Space -->
-    <section class="contact" id="contact">
-        <div class="heading">
-            <h2>Contact</h2>
-            <span>Connect Here</span>
-        </div>
-        <div class="contact-form">
-            <form action="">
-                <input type="text" placeholder="Your Name">
-                <input type="email" name="" id="" placeholder="Your Email">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..."></textarea>
-                <input type="button" value="Send" class="contact-button">
-            </form>
-        </div>
-    </section>
-    <!-- Footer Space -->
-    <div class="footer">
-        <h2>Michael</h2>
-        <div class="footer-social">
-            <a href="#"><i class='bx bxl-facebook' ></i></a>
-            <a href="#"><i class='bx bxl-instagram' ></i></a>
-           
-        </div>
- 
-    </div>
-    <!-- Copyright -->
-    <div class="copyright">
-        <p>&#169; CarpoolVenom All Right Reserved.</p>
-    </div>
- 
- 
- 
-    <!-- JS Link -->
-    <script src="main.js"></script>
-</body>
+    <section id="services"></section>
+    <section id="portfolio"></section>
+    <section id="contact"></section>
+  
+  
+  
+  
+  </body>
 </html>
