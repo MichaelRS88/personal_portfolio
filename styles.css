@@ -159,5 +159,9 @@ header ul li:hover a {
   color: #aaa;
   font-size: 1.1em;
   line-height: 1.5em;
+}
 
+#services .content {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
 }
