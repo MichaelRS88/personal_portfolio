@@ -53,22 +53,22 @@
         </div>
       <div class="content">
         <div class="imgBx">
-           <img src="img1.jpg">
+           <img src="images/coding-acea.jpg">
         </div>
         <div class="imgBx">
-           <img src="img2.jpg">
+           <img src="images/coding-fotopoulous.jpg">
         </div>
         <div class="imgBx">
-           <img src="img3.jpg">
+           <img src="images/coding-screen.jpg">
         </div>
         <div class="imgBx">
-           <img src="img4.jpg">
+           <img src="images/coding-next academy.jpg">
         </div>
          <div class="imgBx">
-           <img src="img5.jpg">
+           <img src="images/coding-helardot.jpg">
         </div>
          <div class="imgBx">
-           <img src="img6.jpg">
+           <img src="images/pc-setup.jpg">
         </div>
         <!--Edit img# files on VSC-->
         
@@ -105,7 +105,14 @@
     i.classList.remove('active'));
     this.classList.add('active');
   }
-  list.forEach((i) =>)
+  list.forEach((i) =>
+  i.addEventListener('click',active));
+
+  let menuToggle = document.querySelector('.menuToggle');
+  let header = document.querySelector('header');
+  menuToggle.onclick = function (){
+    header.classList.toggle('active');
+  }
 </script>
   </body>
 </html>
