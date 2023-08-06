@@ -61,8 +61,6 @@ header ul li:hover a {
   color: #30fe6c; 
 }
 
-
-
 #home {
   position: relative;
   width: 100%;
@@ -129,6 +127,12 @@ header ul li:hover a {
   right: 100px;
   max-height: 90vh;
 }
+#services{
+  position: relative;
+  background: #34353a;
+  min-height: 100vh;
+  padding: 120px 100px;
+}
 
 #services, #portfolio, #contact {
   position: relative;
@@ -153,10 +157,10 @@ header ul li:hover a {
   color: #fff;
 }
 
-.sectText p {
+.secText p{
   max-width:700px;
   text-align: center;
-  color: white;
+  color: #fff;
   font-size: 1.1em;
   line-height: 1.5em;
 }
@@ -344,8 +348,33 @@ header ul li:hover a {
     transition: 0.5s;
   }
 
+header.active .menuToggle::before {
+  transform: translateY(0px) rotate(45deg);
+  box-shadow: 0 0 #fff;
+}
+
+header.active .menuToggle::after{
+  transform: translateY(0px) rotate(315deg);
+}
   header ul {
     display: none;
+  }
+  header .active ul {
+    position: fixed;
+    left: 0;
+    top: 84px;
+    width: 100%;
+    height: calc(100vh - 84px);
+    background: rgba(50, 50, 50, 0, 95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10000;
+    gap: 20px;
+  }
+  header.active ul li a {
+    font-size: 2em;
   }
 }
 @media (max-width: 700px)
