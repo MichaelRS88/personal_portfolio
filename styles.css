@@ -58,7 +58,7 @@ header ul li a{
 
 header ul li .active a,
 header ul li:hover a {
-  color: #30fe6c; 
+  color: #ff00ff; 
 }
 
 #home {
@@ -79,7 +79,7 @@ header ul li:hover a {
   right: 0;
   width: 58vw;
   height: 25vw;
-  background:#30fe6c;
+  background:#ff00ff;
   border-top-right-radius: 25vw;
   border-top-left-radius: 25vw;
 }
@@ -96,7 +96,7 @@ header ul li:hover a {
 #home .content h2 {
   position: relative;
   font-size: 5em;
-  color: #30fe6c;
+  color: #ff00ff;
 }
 
 #home .content p {
@@ -111,8 +111,8 @@ header ul li:hover a {
   display: inline-block;
   font-size: 1.25rem;
   max-width: 200px;
-  background: #30fe6c;
-  color: #222;
+  background: #ff00ff;
+  color: #fff;
   text-align: center;
   padding: 18px 30px;
   font-weight: 500;
@@ -168,8 +168,11 @@ header ul li:hover a {
 #services .content {
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-gap: 20px;
-  margin: 40px 0;
+  margin: 70px 0;
+  align-items: center;
+  padding: 70px 0;
+  place-items: center;
+  width: 200%;
 }
 
 #services .content .servicesBx {
@@ -183,7 +186,7 @@ header ul li:hover a {
 }
 
 #services .content .servicesBx:hover {
-  border: 2px solid #30fe6c;
+  border: 2px solid #ff00ff;
 }
 
 #services .content .servicesBx img{
@@ -200,12 +203,15 @@ header ul li:hover a {
 #services .content .servicesBx h3 {
   color: #fff;
   font-weight: 500;
-  color: #30fe6c;
+  color: #ff00ff;
 }
 
 .center {
   width: 100%;
   text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 #portfolio {
@@ -220,12 +226,24 @@ header ul li:hover a {
   margin: 40px 0;
 }
 
+#portfolio .content h3 {
+  color: #fff;
+}
+
 #portfolio .content .imgBx {
   position: relative;
 }
 
 #portfolio .content .imgBx img{
   max-width: 100%;
+}
+
+#portfolio .center, .button.block {
+  width: 306%;
+  text-align: center;
+  margin: auto;
+  display: block;
+  justify-content center;
 }
 
 #contact .content {
@@ -252,11 +270,11 @@ header ul li:hover a {
 }
 
 #contact .content a:hover {
-  background: #30fe6c;
+  background: #ff00ff;
 }
 
 #contact .content a ion-icon{
-  color: #30fe6c;
+  color: #ff00ff;
   font-size: 1.5em;
   margin-right: 10px;
   transition: 0.5s;
@@ -275,7 +293,7 @@ header ul li:hover a {
 }
 
 .copyright a {
-  color: #30fe6c;  
+  color: #ff00ff;  
 }
 
 
