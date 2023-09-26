@@ -16,17 +16,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   z-index: 10000;
   backdrop-filter: blur(20px);
 }
@@ -127,7 +116,8 @@ header ul li:hover a {
   right: 100px;
   max-height: 90vh;
 }
-#services{
+
+#services {
   position: relative;
   background: #34353a;
   min-height: 100vh;
@@ -157,8 +147,8 @@ header ul li:hover a {
   color: #fff;
 }
 
-.secText p{
-  max-width:700px;
+.secText p {
+  max-width: 700px;
   text-align: center;
   color: #fff;
   font-size: 1.1em;
@@ -167,7 +157,7 @@ header ul li:hover a {
 
 #services .content {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin: 70px 0;
   align-items: center;
   padding: 70px 0;
@@ -183,13 +173,16 @@ header ul li:hover a {
   align-items: center;
   flex-direction: column;
   border: 2px solid #2e2f34;
+  /* Increased width and height to 500px */
+  width: 400px;
+  height: 400px;
 }
 
 #services .content .servicesBx:hover {
   border: 2px solid #ff00ff;
 }
 
-#services .content .servicesBx img{
+#services .content .servicesBx img {
   max-width: 100px;
   filter: invert(1);
   opacity: 0.5;
@@ -219,11 +212,20 @@ header ul li:hover a {
   text-align: center;
 }
 
-#portfolio .content{
+#portfolio .content {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   margin: 40px 0;
+}
+
+.portfolio-item {
+  transition: transform 0.3s ease-in-out; /* Add a transition for the transform property */
+}
+
+.portfolio-item:hover {
+  box-shadow: 0px 0px 15px rgba(255, 0, 255, 0.7);
+  transform: scale(1.05); /* Scale the element slightly when hovered */
 }
 
 #portfolio .content h3 {
@@ -234,26 +236,27 @@ header ul li:hover a {
   position: relative;
 }
 
-#portfolio .content .imgBx img{
+#portfolio .content .imgBx img {
   max-width: 100%;
 }
 
-#portfolio .center, .button.block {
+#portfolio .center,
+.button.block {
   width: 306%;
   text-align: center;
   margin: auto;
   display: block;
-  justify-content center;
+  justify-content: center;
 }
 
 #contact .content {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   margin: 40px 0;
 }
 
-#contact .content p{
+#contact .content p {
   color: #fff;
 }
 
@@ -273,7 +276,7 @@ header ul li:hover a {
   background: #ff00ff;
 }
 
-#contact .content a ion-icon{
+#contact .content a ion-icon {
   color: #ff00ff;
   font-size: 1.5em;
   margin-right: 10px;
@@ -283,9 +286,9 @@ header ul li:hover a {
 #contact .content a:hover,
 #contact .content a:hover ion-icon {
   color: #222;
-} 
+}
 
-.copyright { 
+.copyright {
   margin-top: 150px;
   position: relative;
   color: #aaa;
@@ -293,16 +296,12 @@ header ul li:hover a {
 }
 
 .copyright a {
-  color: #ff00ff;  
+  color: #ff00ff;
 }
 
-
-/*Full Responsive */
-
-@media (max-width: 900px)
-{
-  header
-  {
+/* Full Responsive */
+@media (max-width: 900px) {
+  header {
     padding: 20px 50px;
   }
   #home {
@@ -334,7 +333,7 @@ header ul li:hover a {
   #services .content,
   #portfolio .content,
   #contact .content {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .menuToggle {
     position: relative;
@@ -365,15 +364,13 @@ header ul li:hover a {
     transform: translateY(10px);
     transition: 0.5s;
   }
-
-header.active .menuToggle::before {
-  transform: translateY(0px) rotate(45deg);
-  box-shadow: 0 0 #fff;
-}
-
-header.active .menuToggle::after{
-  transform: translateY(0px) rotate(315deg);
-}
+  header.active .menuToggle::before {
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 #fff;
+  }
+  header.active .menuToggle::after {
+    transform: translateY(0px) rotate(315deg);
+  }
   header ul {
     display: none;
   }
@@ -395,8 +392,7 @@ header.active .menuToggle::after{
     font-size: 2em;
   }
 }
-@media (max-width: 700px)
-{
+@media (max-width: 700px) {
   #home .content h2 {
     font-size: 3em;
   }
@@ -412,12 +408,9 @@ header.active .menuToggle::after{
   #services .content,
   #portfolio .content,
   #contact .content {
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   #contact .content a {
     height: 80px;
   }
 }
-
-
-
