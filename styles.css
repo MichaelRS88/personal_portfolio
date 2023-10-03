@@ -80,7 +80,10 @@ header ul li:hover a {
   gap: 10px;
   max-width: 650px;
   z-index: 10;
+  margin-right: auto; /* Add margin to separate content from the image */
+  padding-right: 20px; /* Add padding to separate content from the image */
 }
+
 #home .content h2 {
   position: relative;
   font-size: 5em;
@@ -156,11 +159,11 @@ header ul li:hover a {
 
 #services .content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* Changed to 2 columns for better separation */
+  grid-gap: 300px; /* Add gap between service items */
   margin: 70px 0;
   align-items: center;
   padding: 70px 0;
-  /* width: 200%; Removed */
 }
 
 #services .content .servicesBx {
